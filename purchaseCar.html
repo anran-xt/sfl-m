@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750,  user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/purchaseCar.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="head">
+            <span class="backIcon">
+                <a href="index.html"></a>
+            </span>
+            <p class="title">购物车</p>
+        </div>
+        <div id="contentWrap">
+            <div id="content">
+                <div id="proWrap">
+                    <div id="proList"></div>
+                </div>
+
+                <div id="guessLike">
+                    <div class="title">
+                        <span class="icon"></span>猜你喜欢
+                    </div>
+                    <div class="guessProList" id="guessProList"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="payBottom">
+            <div class="choseAll">
+                <span class="choseIcon"></span>
+                <span class="choseTxt">全选</span>
+            </div>
+            <div class="rightDes">
+                <div class="total">
+                    <span class="txt">合计:</span>
+                    <span class="moneyTotal">￥
+                        <span class="count">1200</span>.00</span>
+                </div>
+                <div class="settle">结算（
+                    <span class="num">2</span>）</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./libs/zepto.js"></script>
+<script src="./libs/iscroll-probe.js"></script>
+<script src="./libs/template-web.js"></script>
+<script src="./scripts/purchaseCar.js"></script>
+
+</html>

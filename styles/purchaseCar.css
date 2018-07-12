@@ -1,0 +1,205 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  overflow: hidden;
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+i, strong {
+  font-style: normal; }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+#head {
+  width: 100%;
+  height: .88rem;
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #ddd; }
+  #head .backIcon {
+    width: .6rem;
+    height: .6rem;
+    display: block;
+    position: absolute;
+    background: url("../img/checkout_sprite.png") 10px -10px;
+    left: .11rem;
+    top: .11rem; }
+    #head .backIcon a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+  #head .title {
+    font-size: .36rem;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center; }
+
+#contentWrap {
+  -webkit-box-flex: 1;
+  flex: 1;
+  overflow-y: scroll; }
+
+#proList .item {
+  display: flex;
+  background: #fff;
+  padding: .38rem .24rem  .18rem .24rem;
+  border-bottom: .2rem solid #f5f5f5; }
+  #proList .item .leftChose {
+    line-height: 130%;
+    margin-right: .2rem; }
+    #proList .item .leftChose .ifChosed {
+      display: inline-block;
+      width: .28rem;
+      height: .28rem;
+      background: url("../img/checkout_sprite.png") no-repeat -4px -449px; }
+  #proList .item .goodImg img {
+    width: 1.8rem;
+    height: 1.8rem; }
+  #proList .item .rightDetail {
+    width: 4.54rem;
+    font-size: .26rem;
+    margin-left: .5rem; }
+    #proList .item .rightDetail .infoBox {
+      margin-bottom: .2rem; }
+    #proList .item .rightDetail .specWrap {
+      color: #9d9d9d; }
+    #proList .item .rightDetail .priCount {
+      margin-top: .35rem; }
+      #proList .item .rightDetail .priCount:after {
+        content: "";
+        display: block;
+        clear: both; }
+      #proList .item .rightDetail .priCount .pri {
+        display: inline-block;
+        float: left;
+        color: #f00; }
+      #proList .item .rightDetail .priCount .count {
+        display: inline-block;
+        float: right;
+        border: .02rem solid #f5f5f5;
+        height: .42rem;
+        text-align: center;
+        font-size: 0; }
+        #proList .item .rightDetail .priCount .count .iconC {
+          display: inline-block;
+          width: .4rem;
+          height: .38rem;
+          vertical-align: top; }
+        #proList .item .rightDetail .priCount .count .reduce {
+          background: url("../img/checkout_sprite.png") -360px -511px no-repeat; }
+        #proList .item .rightDetail .priCount .count .add {
+          background: url("../img/checkout_sprite.png") -323px -511px no-repeat; }
+        #proList .item .rightDetail .priCount .count .numIpt {
+          width: .55rem;
+          height: .38rem;
+          display: inline-block;
+          font-size: .24rem;
+          line-height: .38rem;
+          border-left: 2px solid #f5f5f5;
+          border-right: 2px solid #f5f5f5; }
+    #proList .item .rightDetail .edit {
+      clear: both;
+      float: right;
+      margin-top: .1rem;
+      font-size: .22rem;
+      color: #8a8a8a; }
+
+#guessLike {
+  padding-bottom: .5rem; }
+  #guessLike .title {
+    background: #f5f5f5;
+    height: .9rem;
+    font-size: .32rem;
+    line-height: .9rem;
+    text-align: center; }
+    #guessLike .title .icon {
+      display: inline-block;
+      width: .45rem;
+      height: .38rem;
+      position: relative;
+      right: .1rem;
+      top: .08rem;
+      background: url("../img/index_sprite.png") no-repeat -559px -19px; }
+  #guessLike .guessProList {
+    font-size: .26rem;
+    padding: 0 .2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #guessLike .guessProList .r {
+      border-right: .01rem solid #ddd; }
+    #guessLike .guessProList .b {
+      border-bottom: .01rem solid #ddd; }
+    #guessLike .guessProList .guessItem {
+      width: 50%;
+      padding: .2rem .15rem .4rem; }
+      #guessLike .guessProList .guessItem img {
+        width: 3.2rem;
+        height: 3.2rem; }
+      #guessLike .guessProList .guessItem .brand {
+        font-size: .24rem;
+        color: #474747;
+        margin-bottom: .1rem; }
+      #guessLike .guessProList .guessItem .proName {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: .1rem; }
+      #guessLike .guessProList .guessItem .price {
+        color: #f00;
+        font-size: .22rem; }
+        #guessLike .guessProList .guessItem .price .priNum {
+          font-size: .26rem; }
+
+#payBottom {
+  height: 1.06rem;
+  border-top: 0.02rem solid #ddd;
+  font-size: .26rem; }
+  #payBottom .choseAll {
+    float: left;
+    height: 1.04rem;
+    line-height: 1.04rem; }
+    #payBottom .choseAll .choseIcon {
+      display: inline-block;
+      width: .28rem;
+      height: .28rem;
+      background: url("../img/checkout_sprite.png") no-repeat -4px -449px;
+      margin: 0 .15rem 0 .2rem;
+      vertical-align: middle; }
+    #payBottom .choseAll .choseTxt {
+      display: inline-block;
+      font-size: .28rem;
+      line-height: .28rem; }
+  #payBottom .rightDes {
+    line-height: 1.04rem;
+    text-align: center;
+    float: right; }
+    #payBottom .rightDes .total {
+      float: left;
+      margin-right: .2rem; }
+      #payBottom .rightDes .total .moneyTotal {
+        color: #e00; }
+        #payBottom .rightDes .total .moneyTotal .count {
+          font-size: .28rem; }
+    #payBottom .rightDes .settle {
+      float: left;
+      width: 2.2rem;
+      height: 1.04rem;
+      background: #e00;
+      color: #fff;
+      font-size: .3rem; }

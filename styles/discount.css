@@ -1,0 +1,82 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  overflow: hidden;
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+i, strong {
+  font-style: normal; }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+#head {
+  width: 100%;
+  height: .88rem;
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #ddd; }
+  #head .backIcon {
+    width: .6rem;
+    height: .6rem;
+    display: block;
+    position: absolute;
+    background: url("../img/checkout_sprite.png") 10px -10px;
+    left: .11rem;
+    top: .11rem; }
+    #head .backIcon a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+  #head .title {
+    font-size: .36rem;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center; }
+
+#content {
+  flex: 1;
+  overflow-y: scroll; }
+  #content .topImg {
+    font-size: 0; }
+  #content .limitedPart {
+    background: url("../img/ws20180530_11.jpg") top repeat-y; }
+    #content .limitedPart .limitedIcon img {
+      display: block; }
+    #content .limitedPart .limitedList {
+      padding-top: .2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      #content .limitedPart .limitedList .limitedItem {
+        width: 46.7%;
+        font-size: .3rem;
+        text-align: center;
+        padding: 0 .25rem .15rem;
+        background: #fff;
+        margin-bottom: .15rem; }
+        #content .limitedPart .limitedList .limitedItem .itemImg {
+          text-align: center; }
+          #content .limitedPart .limitedList .limitedItem .itemImg img {
+            width: 3.14rem; }
+        #content .limitedPart .limitedList .limitedItem .itemDes .price {
+          margin-top: .15rem;
+          font-size: .20rem;
+          color: #F00; }
+          #content .limitedPart .limitedList .limitedItem .itemDes .price .monty {
+            font-size: .30rem; }

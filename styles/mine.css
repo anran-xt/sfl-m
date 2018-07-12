@@ -1,0 +1,248 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  overflow: hidden;
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+i, strong {
+  font-style: normal; }
+
+#footerWrap {
+  height: 1.13rem;
+  width: 100%; }
+
+#category {
+  /*background: #ddd;*/
+  width: 100%;
+  height: 113px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  background: #fff; }
+
+#category .item {
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0; }
+
+#category .item .icon {
+  display: block;
+  width: 70px;
+  height: 44px; }
+
+#category .item .text {
+  color: #858585; }
+
+#category .homeItem .icon {
+  background: url("../img/categorypage.png") 13px -349px no-repeat; }
+
+#category .kindItem .icon {
+  background: url("../img/categorypage.png") -69px -349px no-repeat; }
+
+#category .discountItem .icon {
+  background: url("../img/categorypage.png") -158px -348px no-repeat; }
+
+#category .shoppingCartItem .icon {
+  background: url("../img/categorypage.png") -241px -347px no-repeat; }
+
+#category .mineItem .icon {
+  background: url("../img/categorypage.png") -325px -347px no-repeat; }
+
+#category .active .text {
+  color: #de1f47; }
+
+#category .active .icon {
+  background-position-y: -432px; }
+
+#root {
+  display: flex;
+  height: 100%;
+  flex-direction: column; }
+
+#head {
+  width: 100%;
+  height: .88rem;
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #ddd; }
+  #head .title {
+    font-size: .38rem;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center; }
+  #head .exit {
+    font-size: .34rem;
+    height: .34rem;
+    line-height: .34rem;
+    position: absolute;
+    right: .2rem;
+    top: .27rem;
+    color: #999; }
+
+#contentWrap {
+  flex: 1;
+  width: 100%;
+  overflow-y: scroll; }
+  #contentWrap #content {
+    background: #f5f5f5;
+    padding-bottom: .4rem; }
+    #contentWrap #content .myPart {
+      text-align: center;
+      height: 4.25rem;
+      background: #fff; }
+      #contentWrap #content .myPart .myIcon {
+        padding-top: .3rem; }
+        #contentWrap #content .myPart .myIcon img {
+          width: 1.2rem; }
+      #contentWrap #content .myPart .myName {
+        font-size: .4rem;
+        line-height: .56rem;
+        height: 1.16rem;
+        padding: .2rem 0 .4rem; }
+    #contentWrap #content .cardPart {
+      padding: 0 .2rem;
+      position: relative;
+      top: -1.50rem; }
+      #contentWrap #content .cardPart .profile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: .3rem;
+        height: 1.65rem;
+        border-radius: .1rem;
+        box-shadow: 0 -10px 15px #ddd;
+        background: #fff;
+        z-index: 99; }
+        #contentWrap #content .cardPart .profile .proItem {
+          text-align: center; }
+          #contentWrap #content .cardPart .profile .proItem p {
+            margin-bottom: .1rem; }
+          #contentWrap #content .cardPart .profile .proItem .demand {
+            color: #f00; }
+          #contentWrap #content .cardPart .profile .proItem .des {
+            font-size: .26rem;
+            color: #999; }
+      #contentWrap #content .cardPart .beMember {
+        width: 100%;
+        background: url("../img/profile_card_pink.png") center no-repeat;
+        height: 3.68rem;
+        padding: .6rem .4rem 0;
+        font-size: .3rem;
+        color: #fff; }
+        #contentWrap #content .cardPart .beMember .idCard {
+          margin-bottom: .3rem; }
+          #contentWrap #content .cardPart .beMember .idCard .cardDes {
+            margin-bottom: .1rem; }
+        #contentWrap #content .cardPart .beMember .carDes {
+          font-size: .26rem;
+          padding-bottom: .15rem;
+          border-bottom: 1px solid #fff; }
+        #contentWrap #content .cardPart .beMember .bottomMsg {
+          margin-top: .2rem;
+          padding-left: .65rem; }
+          #contentWrap #content .cardPart .beMember .bottomMsg .checkMore {
+            float: right;
+            font-size: .24rem; }
+            #contentWrap #content .cardPart .beMember .bottomMsg .checkMore:after {
+              content: "";
+              display: inline-block;
+              width: .11rem;
+              height: .2rem;
+              background: url("../img/profile_center_sprite.png") -388px -12px;
+              margin-left: .15rem; }
+    #contentWrap #content .orderPart {
+      margin: 0 .2rem;
+      background: #fff;
+      font-size: .3rem;
+      margin-top: -1.3rem;
+      margin-bottom: .2rem; }
+      #contentWrap #content .orderPart .myOrder {
+        margin: 0 .4rem;
+        height: .89rem;
+        padding: .23rem 0;
+        border-bottom: 1px solid #ddd; }
+        #contentWrap #content .orderPart .myOrder .moreOrder {
+          float: right;
+          font-size: .26rem;
+          color: #999; }
+          #contentWrap #content .orderPart .myOrder .moreOrder .leftMy {
+            color: #333; }
+          #contentWrap #content .orderPart .myOrder .moreOrder:after {
+            content: "";
+            display: inline-block;
+            width: .2rem;
+            height: .4rem;
+            background: url("../img/profile_center_sprite.png") no-repeat -260px -60px;
+            vertical-align: middle;
+            margin-top: -.1rem;
+            margin-left: .2rem; }
+      #contentWrap #content .orderPart .orderList {
+        padding-top: .3rem; }
+        #contentWrap #content .orderPart .orderList:after {
+          content: "";
+          display: block;
+          clear: both; }
+        #contentWrap #content .orderPart .orderList .orderItem {
+          width: 25%;
+          height: 1.2rem;
+          text-align: center;
+          float: left; }
+          #contentWrap #content .orderPart .orderList .orderItem .orderIcon {
+            width: .6rem;
+            height: .6rem;
+            margin: 0 auto .1rem; }
+          #contentWrap #content .orderPart .orderList .orderItem .orderDes {
+            font-size: .24rem;
+            color: #999; }
+        #contentWrap #content .orderPart .orderList .readyPay .orderIcon {
+          background: url("../img/profile_center_sprite.png") -120px 0; }
+        #contentWrap #content .orderPart .orderList .handling .orderIcon {
+          background: url("../img/profile_center_sprite.png") -180px 0; }
+        #contentWrap #content .orderPart .orderList .distributing .orderIcon {
+          background: url("../img/profile_center_sprite.png") -240px 0; }
+        #contentWrap #content .orderPart .orderList .completed .orderIcon {
+          background: url("../img/profile_center_sprite.png") -300px 0; }
+    #contentWrap #content .toolPart {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 .2rem;
+      font-size: .26rem;
+      text-align: center;
+      background: #fff;
+      color: #999;
+      padding: .3rem 0; }
+      #contentWrap #content .toolPart .toolItem {
+        width: 33.3333%; }
+        #contentWrap #content .toolPart .toolItem .toolIcon {
+          width: .8rem;
+          height: .8rem;
+          margin: 0 auto .2rem;
+          background: url("../img/profile_center_sprite.png") no-repeat; }
+      #contentWrap #content .toolPart .address .toolIcon {
+        background-position: 0 -60px; }
+      #contentWrap #content .toolPart .concat .toolIcon {
+        background-position: -80px -60px; }
+      #contentWrap #content .toolPart .help .toolIcon {
+        background-position: -160px -60px; }
+
+#footerWrap {
+  width: 100%;
+  height: 1.13rem; }
